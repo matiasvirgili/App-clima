@@ -97,7 +97,7 @@ var mostrarDatosSemanales = function (obj) {
       '   ' +
       obj.daily[i].temp.min.toFixed(0) +
       '°'
-    contenedorLogo.innerHTML = `<img src='/icons/${iconoClimaSemana}.png'></img`
+    contenedorLogo.innerHTML = `<img src='icons/${iconoClimaSemana}.png'></img`
     indiceUV.textContent = obj.current.uvi.toFixed(2)
   }
 }
@@ -120,7 +120,7 @@ var mostrarDatos = function (obj) {
 
   //mostrar icono en today
   var iconoClima = obj.weather[0].icon
-  iconoToday.innerHTML = `<img src='/icons/${iconoClima}.png'></img`
+  iconoToday.innerHTML = `<img src='icons/${iconoClima}.png'></img`
 
   //mostrar la velocidad del viento
   velocidadViento.textContent = obj.wind.speed.toFixed(2) + 'km/h'
@@ -129,14 +129,14 @@ var mostrarDatos = function (obj) {
   humedad.textContent = obj.main.humidity + '%'
   if (obj.main.humidity < 50) {
     porcentajeHumedad.textContent = 'light'
-    manitoHumedad.innerHTML = '<img src="/img/manito.PNG"></img>'
+    manitoHumedad.innerHTML = '<img src="img/manito.PNG"></img>'
   } else {
     if (obj.main.humidity > 50) {
       porcentajeHumedad.textContent = 'heavy'
-      manitoHumedad.innerHTML = '<img src="/img/manitoAbajo.PNG"></img>'
+      manitoHumedad.innerHTML = '<img src="img/manitoAbajo.PNG"></img>'
     } else {
       porcentajeHumedad.textContent = 'normal'
-      manitoHumedad.innerHTML = '<img src="/img/manito.PNG"></img>'
+      manitoHumedad.innerHTML = '<img src="img/manito.PNG"></img>'
     }
   }
 
@@ -158,5 +158,5 @@ var mostrarDatos = function (obj) {
 
   //logo descripcion del tiempo
   var logo = obj.weather[0].icon
-  logoDescricion.innerHTML = `<img src='/icons/${logo}.png'></img`
+  logoDescricion.innerHTML = `<img src='icons/${logo}.png'></img`
 }
