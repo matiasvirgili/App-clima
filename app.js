@@ -28,7 +28,7 @@ window.onload = function () {
 var getWeatherData = async function (ciudad, key) {
   //fetch
   var res = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${key}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${key}`,
   )
   var data = await res.json()
 
