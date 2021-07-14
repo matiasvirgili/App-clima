@@ -2,7 +2,6 @@
 body{
     background-color: #D6D7DA;
     display: flex;
-
 }
 h1,h2, h3, p, a{
     font-family: 'Poppins', sans-serif;
@@ -12,11 +11,11 @@ h1,h2, h3, p, a{
 .contenedor-principal{
     display: flex;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 90px;
     height: 40vw;
     width: 55vw;
-    
 }
+
 
 /** Seccion Izquieda de la app **/ 
 .cont-today{
@@ -27,7 +26,6 @@ h1,h2, h3, p, a{
     width: 30%;
     background-color: #FFFFFF;
     border-radius: 15px 0 0 15px;
-    
 }
 
 .contenedor-busqueda{
@@ -35,18 +33,20 @@ h1,h2, h3, p, a{
     display: flex;
     align-items: center;
     margin: 30px 20px 15px 0;
-
 }
+
 .icono-busqueda{
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
+
 #buscar-ciudad{
     border: none;
     padding: 10px;
     margin-bottom: 0;
 }
+
 #buscar-ciudad::placeholder{
     color: black;
 }
@@ -78,14 +78,13 @@ h1,h2, h3, p, a{
     color: lightgray;
 }
 
-
 .cont-today p{
-     width: 70%;
-     margin: 0 0 10px 0px;
+    width: 70%;
+    margin: 0 0 10px 0px;
     align-items: center;
-     text-align: left;
-     color: black;
-     font-weight: 600;
+    text-align: left;
+    color: black;
+    font-weight: 600;
 }
 
 .contenedor-imagen-ny img {
@@ -101,11 +100,13 @@ h1,h2, h3, p, a{
     width: 70%;
     border-radius: 20px;
 }
+
 .texto-encima{
     position: absolute;
     top: 10px;
     left: 10px;
 }
+
 .centrado{
     position: absolute;
     top: 50%;
@@ -126,13 +127,11 @@ h1,h2, h3, p, a{
     border-radius: 0 15px 15px 0;
 }
 
-
 /** navegacion **/
 .navegacion{
     display: flex;
     justify-content:space-between;
-    padding: 2.8vw;
-    
+    padding: 2.8vw;  
 }
 .nav{
     display: flex;
@@ -146,6 +145,12 @@ h1,h2, h3, p, a{
     font-weight: 600;
     border-bottom: 1px solid black;
 }
+
+#today{
+    color: lightgray;
+    border: none;
+}
+
 .grados{
     display: flex;
     align-items: center;
@@ -161,6 +166,7 @@ h1,h2, h3, p, a{
     border-radius: 50%;
     padding: 10px;
 }
+
 .circulo-f{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -171,10 +177,12 @@ h1,h2, h3, p, a{
     border-radius: 50%;
     padding: 10px;
 }
+
 .img-user img{
     width: 100%;
     border-radius: 15px;
 }
+
 .img-user{
     width: 50px;
     height: 50px;
@@ -196,6 +204,7 @@ h1,h2, h3, p, a{
     padding: 5px 17px;
     border-radius: 15px;
 }
+
 .targeta p{
     margin: 5px;
     text-align: center;
@@ -209,8 +218,8 @@ h1,h2, h3, p, a{
 }
 
 .cont-week h2{
- margin-left: 50px;
- margin-top: 30px;   
+    margin-left: 50px;
+    margin-top: 30px;   
 }
 
 .contenedor-desc-img{
@@ -218,6 +227,7 @@ h1,h2, h3, p, a{
     align-items: center;
     width: 70%;
 }
+
 .contenedor-des-img p{
     margin: 0;
 }
@@ -227,22 +237,32 @@ h1,h2, h3, p, a{
     width: 35px;
     margin-right: 20px;
 }
+
 .contenedor-grafico-texto{
     display: flex;
     align-items: center;
     margin: 0;
 }
+
+.humedad{
+    margin-top: 10px;
+}
+.wind{
+    margin-top: 20px;
+}
+
 .contenedor-sunrise-sunset{
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
+
 #sunrise{
-    margin-right: 8px;
+    margin-right: 5px;
 }
+
 .contenedor-sunrise-sunset p{
     margin-left: 10px;
-    margin-right: 15px;
 }
 
 .contenedor-estadisticas{
@@ -255,16 +275,17 @@ h1,h2, h3, p, a{
     height: 35px;
     width: 35px;
 }
+
 .contenedor-uv{
     display: flex;
     align-items: center;
     margin: 20px;
 }
+
 .contenedor-uv p{
     margin-right: 30px;
     font-size: 2rem;
 }
-
 
 .cuadrado{
     display: flex;
@@ -277,17 +298,21 @@ h1,h2, h3, p, a{
     width: 200px;
     border-radius: 15px;
 }
+
 .cuadrado h2, p{
     margin: 0;
     font-weight: 600;
 }
+
 .cuadrado h2{
     font-size: 2rem;
     margin-bottom: 15px;
 }
+
 #alverage {
     margin-top: 10px;
 }
+
 #velocidad-viento{
     margin: 5px 0 0 0;
     font-size: 2rem;
@@ -298,10 +323,68 @@ h1,h2, h3, p, a{
     margin: 15px 0;
     color: lightgray;
 }
+
 .contenedor-grafico-texto img{
     margin: 0 0 0 30px;
 }
+
 .contenedor-grafico-texto h2{
     margin-left: 50px;
     font-size: 2rem;
+}
+
+@media (max-width: 1080px) {
+   
+    .contenedor-principal{
+        height: 90%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .cont-today{
+        width: 100%;
+        border-radius: 15px 15px 0 0 ;
+        margin-top: 0;
+    }
+    .contenedor-imagen-today{
+        width: 70%;
+    }
+    .contenedor-imagen-ny{
+        margin-bottom: 40px;
+    }
+    .cont-week{
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 40px; 
+    }
+    .contendor-days-week{
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #h2suelto{
+        margin-top: 60px;
+    }
+    .nav{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .nav a{
+        font-size: 1rem;
+    }  
+    .targeta{
+        width: 10%;
+        height: 50%;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor-estadisticas{
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    
 }

@@ -34,7 +34,6 @@ var getWeatherData = async function (ciudad, key) {
 
   //mostrar los datos en pantalla
   mostrarDatos(data)
-  console.log(data)
 }
 
 contenedorBusqueda.addEventListener('submit', (e) => {
@@ -47,7 +46,6 @@ var getWeatherDataWeek = async function (lat, lon) {
     `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${key}&units=metric`,
   )
   var data = await res.json()
-  console.log(data)
   mostrarDatosSemanales(data)
 }
 
@@ -95,7 +93,7 @@ var mostrarDatosSemanales = function (obj) {
     diaActual.textContent = nombreDiaActual
     tempSemanal.textContent =
       obj.daily[i].temp.max.toFixed(0) +
-      '° ' +
+      '°' +
       '   ' +
       obj.daily[i].temp.min.toFixed(0) +
       '°'
@@ -146,14 +144,14 @@ var mostrarDatos = function (obj) {
   visibilidad.textContent = obj.visibility / 1000 + 'km'
 
   //mostrar amanecer y atardecer
-  var sunriseHora = new Date(obj.sys.sunrise * 1000).toLocaleString('es-ES', {
-    timeStyle: 'short',
-  })
-  var sunsetHora = new Date(obj.sys.sunset * 1000).toLocaleString('es-ES', {
-    timeStyle: 'short',
-  })
-  sunrise.textContent = sunriseHora + 'hs'
-  sunset.textContent = sunsetHora + 'hs'
+  var sunriseHora = new Date(obj.sys.sunrise * 1000 + obj.timezone * 1000)
+  var amanecer = sunriseHora.getUTCHours() + ':' + sunriseHora.getUTCMinutes()
+
+  var sunsetHora = new Date(obj.sys.sunset * 1000 + obj.timezone * 1000)
+  var atardecer = sunsetHora.getUTCHours() + ':' + sunsetHora.getUTCMinutes()
+
+  sunrise.textContent = amanecer + 'hs'
+  sunset.textContent = atardecer + 'hs'
 
   //Descripcion del tiempo
   descripcion.textContent = obj.weather[0].description
