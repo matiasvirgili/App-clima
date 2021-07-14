@@ -94,11 +94,27 @@ h1,h2, h3, p, a{
 }
 
 .contenedor-imagen-ny{
+    position: relative;
+    display: inline-block;
+    text-align: center;
     margin-top: 15px;
     width: 70%;
-    height: 5vw;
-    width: 12vw;
     border-radius: 20px;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 /** Seccion derecha de la app **/
@@ -187,11 +203,30 @@ h1,h2, h3, p, a{
     font-size: .8rem;
 }
 
+.contenedor-logo-semanal img{
+    height: 50px;
+    width: 50px;
+}
+
 .cont-week h2{
  margin-left: 50px;
  margin-top: 30px;   
 }
 
+.contenedor-desc-img{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.contenedor-des-img p{
+    margin: 0;
+}
+
+.contenedor-logo-descripcion img{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+}
 .contenedor-grafico-texto{
     display: flex;
     align-items: center;
@@ -215,6 +250,21 @@ h1,h2, h3, p, a{
     flex-wrap: wrap;
     margin-left: 40px;
 }
+
+.contenedor-uv img{
+    height: 35px;
+    width: 35px;
+}
+.contenedor-uv{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.contenedor-uv p{
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
 
 .cuadrado{
     display: flex;

@@ -26,14 +26,16 @@
 
             <div id="contenedor-imagen-today" class="contenedor-imagen-today"></div>
             <h1 id="temp">12°C</h1>
-            <h2 id="dia">Monday, <span id="hora" class="gris">16:00</span></h2>
+            <h2> <span id="dia"> Monday,</span> <span id="hora" class="gris">16:00</span></h2>
 
-            <p> <img src="/img/nubeSola.PNG" alt=""> Mostly Cloudy</p>
-            <p> <img src="/img/lluviaSola.PNG" alt=""> Rain - 30%</p>
-
+            <div class="contenedor-desc-img">
+                <div id="icono-descripcion" class="contenedor-logo-descripcion"></div>
+                <p id="descripcion-tiempo"> Mostly Cloudy </p>
+            </div>
 
             <div class="contenedor-imagen-ny">
                 <img src="/img/newa_york_de_noche.jpg" alt="">
+                <div id="ciudad" class="centrado">pais</div>
             </div>
 
         </div>
@@ -54,39 +56,39 @@
             </nav>
             <div class="contendor-days-week">
                 <div class="targeta">
-                    <p>Sun</p>
-                    <img src="/img/sol.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia1">Sun</p>
+                    <div id="cont1" class="contenedor-logo-semanal"></div>
+                    <p id="temp1">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Mon</p>
-                    <img src="/img/solNubeLluvia.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia2">Mon</p>
+                    <div id="cont2" class="contenedor-logo-semanal"></div>
+                    <p id="temp2">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Tue</p>
-                    <img src="/img/nuveLluvia.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia3">Tue</p>
+                    <div id="cont3" class="contenedor-logo-semanal"></div>
+                    <p id="temp3">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Wed</p>
-                    <img src="/img/lluvia.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia4">Wed</p>
+                    <div id="cont4" class="contenedor-logo-semanal"></div>
+                    <p id="temp4">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Thu</p>
-                    <img src="/img/nieve.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia5">Thu</p>
+                    <div id="cont5" class="contenedor-logo-semanal"></div>
+                    <p id="temp5">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Fri</p>
-                    <img src="/img/solNube.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia6">Fri</p>
+                    <div id="cont6" class="contenedor-logo-semanal"></div>
+                    <p id="temp6">temp</p>
                 </div>
                 <div class="targeta">
-                    <p>Sat</p>
-                    <img src="/img/solNube.PNG" alt="">
-                    <p>temp</p>
+                    <p id="dia7">Sat</p>
+                    <div id="cont7" class="contenedor-logo-semanal"></div>
+                    <p id="temp7">temp</p>
                 </div>
             </div>
 
@@ -96,7 +98,10 @@
 
                 <div class="cuadrado">
                     <h3>UV Index</h3>
-                    <img src="/img/grafico.PNG" alt="">
+                    <div class="contenedor-uv">
+                        <p id="uv-indice"> 3</p>
+                        <img src="/img/inidiceUV.png" alt="">
+                    </div>
                 </div>
                 <div class="cuadrado">
                     <h3>Wind Status</h3>
