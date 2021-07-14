@@ -188,7 +188,10 @@ h1,h2, h3, p, a{
     height: 50px;
     margin-left: 30px;
     border-radius: 15px;
-    background-image: url(/img/como_saber_si_le_gustas_a_una_persona_por_whatsapp_5103_600.jpg);
+    background-image: url(img/como_saber_si_le_gustas_a_una_persona_por_whatsapp_5103_600.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;;
 }
 
 .contendor-days-week{
